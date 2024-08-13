@@ -27,6 +27,11 @@ const Featured = () => {
           instantly. It allows them to diagnose diseases more effectively and
           make predictions based on past medical history.
         </p>
+        <button className="btn btn-primary">
+                  <a href="https://medicalink.co/" target="_blank">
+                    Visit Website
+                  </a>
+                </button>
         <Row>
           <Col>
             <div className="d-flex flex-row mt-4 justify-content-center align-items-center">

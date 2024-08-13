@@ -11,10 +11,14 @@ const About = () => {
       <div className="container d-flex flex-column align-items-center gap-2">
         <h2 className="about-title title">About</h2>
         <p>
-          👋 Hi there! I’m a passionate Web Developer who loves creating
-          user-friendly designs that are visually stunning. Right now, I’m
-          learning ReactJS, JavaScript, and Python on my own. I’m 21 and based
-          in Colombo, Sri Lanka, excited about the future in tech and design!
+          👋 Hi there! This is my personal portfolio website. Thank you for
+          visiting, have a look at my recent projects.
+        </p>
+        <p>
+          I’m a passionate Web Developer who loves creating user-friendly
+          designs that are visually stunning. Right now, I’m learning ReactJS,
+          JavaScript, and UI/UX Design. I’m 21 and based in Colombo, Sri Lanka,
+          excited about the future in tech and design!
         </p>
 
         <div className="gallery-container">
