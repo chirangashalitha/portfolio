@@ -20,7 +20,7 @@ const Hero = () => {
             transition={{ duration: 2, type: "spring" }}
           >
             <div className="container">
-              <Row className="d-flex flex-row">
+              <Row>
                 <Col lg={6}>
                   <img src={ProfileImage} className="profile-image" />
                 </Col>
@@ -30,13 +30,6 @@ const Hero = () => {
                     Web Developer | UI/UX Designer
                   </h2>
                   <div className="profile-icons gap-2">
-                    <a
-                      href="./assets/doc/resume1.pdf"
-                      className="btn btn-dark btn-downloadcv"
-                      target="_blank"
-                    >
-                      Download CV
-                    </a>
                     <a
                       href="https://github.com/chirangashalitha"
                       target="_blank"

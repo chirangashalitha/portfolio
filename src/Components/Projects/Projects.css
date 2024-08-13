@@ -16,10 +16,10 @@
   box-shadow: none;
 }
 
-.card-img-top {
+/* .card-img-top {
   height: 400px;
   object-fit: cover;
-}
+} */
 
 .card-body,
 .card-body .card-title,

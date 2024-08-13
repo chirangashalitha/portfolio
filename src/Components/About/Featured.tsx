@@ -2,6 +2,8 @@ import "./Featured.css";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import MedicaLinkUIFull from "../../assets/images/medicalink-tab-Photoroom.png";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const Featured = () => {
   const featuredSection = useRef(null);
@@ -25,9 +27,14 @@ const Featured = () => {
           instantly. It allows them to diagnose diseases more effectively and
           make predictions based on past medical history.
         </p>
-        <div className="d-flex flex-row mt-4 justify-content-center align-items-center">
-          <img src={MedicaLinkUIFull} className="featured-project-image"/>
-        </div>
+        <Row>
+          <Col>
+            <div className="d-flex flex-row mt-4 justify-content-center align-items-center">
+              <img src={MedicaLinkUIFull} className="featured-project-image" />
+            </div>
+          </Col>
+        </Row>
+
         <p>Stay tuned for more exciting updates!</p>
       </div>
     </motion.div>
