@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="container">
               <Row>
                 <Col lg={6}>
-                  <img src={ProfileImage} className="profile-image" />
+                  <motion.img src={ProfileImage} className="profile-image" whileHover={{ scale: 1.1 }}/>
                 </Col>
                 <Col lg={6} className="profile-info d-flex flex-column gap-4">
                   <h1 className="profile-name">Chiranga Shalitha</h1>
@@ -30,18 +30,18 @@ const Hero = () => {
                     Web Developer | UI/UX Designer
                   </h2>
                   <div className="profile-icons gap-2">
-                    <a
+                    <motion.a whileHover={{ scale: 1.5 }}
                       href="https://github.com/chirangashalitha"
                       target="_blank"
                     >
                       <i className="bi bi-github text-white btn-github"></i>
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a whileHover={{ scale: 1.5 }}
                       href="https://www.linkedin.com/in/chiranga-shalitha"
                       target="_blank"
                     >
                       <i className="bi bi-linkedin text-white btn-linkedin"></i>
-                    </a>
+                    </motion.a>
                   </div>
                 </Col>
               </Row>

@@ -1,38 +1,13 @@
 import "./About.css";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 import InfoSchol from "../../assets/images/about.png";
 import CuttingEdge24 from "../../assets/images/cuttingedge24.jpg";
 import eBEYONDS from "../../assets/images/ebeyonds-team-cropped.jpg";
 import InfoSchol2 from "../../assets/images/infoschol.png";
 
 const About = () => {
-  const aboutSection = useRef(null);
-  const isInView = useInView(aboutSection, { once: true });
-
-  const containerVariants = {
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-    hidden: { opacity: 0 },
-  };
-
-  const imageVariants = {
-    visible: { opacity: 1, scale: 1 },
-    hidden: { opacity: 0, scale: 0.9 },
-  };
-
   return (
-    <motion.div
-      ref={aboutSection}
-      className="about-section"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: isInView ? 1 : 0 }}
-      transition={{ duration: 4 }}
-    >
+    <div className="about-section">
       <div className="container d-flex flex-column align-items-center gap-2">
         <h2 className="about-title title">About</h2>
         <p>
@@ -42,39 +17,34 @@ const About = () => {
           in Colombo, Sri Lanka, excited about the future in tech and design!
         </p>
 
-        <motion.div
-          className="gallery-container"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-        >
+        <div className="gallery-container">
           <motion.img
             src={InfoSchol}
             alt="InfoSchol Induction Program 2024"
             className="gallery-image"
-            variants={imageVariants}
+            whileHover={{ scale: 1.1 }}
           />
           <motion.img
             src={eBEYONDS}
             alt="eBEYONDS Team"
             className="gallery-image"
-            variants={imageVariants}
+            whileHover={{ scale: 1.1 }}
           />
           <motion.img
             src={CuttingEdge24}
             alt="Cutting Edge Exhibition 2024 at BMICH"
             className="gallery-image"
-            variants={imageVariants}
+            whileHover={{ scale: 1.1 }}
           />
           <motion.img
             src={InfoSchol2}
             alt="InfoSchol Induction Day Finale"
             className="gallery-image"
-            variants={imageVariants}
+            whileHover={{ scale: 1.1 }}
           />
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
