@@ -1,0 +1,65 @@
+.navlink {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  margin: 1em 0;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+.navlink:active {
+  color: #ffffff;
+}
+
+.navlink:hover {
+  color: #ffffff;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../../assets/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 30em;
+}
+
+.profile-image {
+  margin-top: 100px;
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.profile-name,
+.profile-title {
+  margin-left: -45px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 800;
+}
+
+.profile-name {
+  font-size: 75px;
+  margin-top: 380px;
+}
+
+.profile-icons {
+  margin-left: -45px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-github,
+.btn-linkedin {
+  font-size: 28px;
+}

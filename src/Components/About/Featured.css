@@ -1,0 +1,16 @@
+.featured-section {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 2s ease;
+  padding: 5em 0;
+}
+
+.featured-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+}
